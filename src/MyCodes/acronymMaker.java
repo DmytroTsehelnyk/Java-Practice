@@ -1,3 +1,4 @@
+package MyCodes;
 
 import java.util.Scanner;
 
@@ -7,11 +8,11 @@ public class acronymMaker {
         Scanner scan = new Scanner(System.in);
         String input = scan.nextLine();
         String output = makeAbbr(input);
-        StringBuilder builder = new StringBuilder("Acronym of ");
-                builder.append(input);
-                builder.append(" is: ");
-                builder.append(output);
-        String result = builder.toString();
+        StringBuilder sb = new StringBuilder("Acronym of ");
+                sb.append(input);
+                sb.append(" is: ");
+                sb.append(output);
+        String result = sb.toString();
         System.out.print(result);
     }
     public static String makeAbbr(String input) {
