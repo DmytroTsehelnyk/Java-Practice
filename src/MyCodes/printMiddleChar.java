@@ -12,16 +12,9 @@ public class printMiddleChar {
     }
 
     public static String printMiddle(String input) {
-        int pos;
-        int len;
+        int len = input.length();
         if (input.isEmpty()) return "";
-        if (input.length() % 2 == 0) {
-            pos = input.length() / 2 - 1;
-            len = 2;
-        } else {
-            pos = input.length() / 2;
-            len = 1;
-        }
-        return input.substring(pos, pos + len);
+        int mid = len / 2;
+        return len % 2 == 1 ? input.substring(mid, mid + 1) : input.substring(mid - 1, mid + 1);
     }
 }
