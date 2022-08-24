@@ -2,7 +2,7 @@ package MyCodes;
 
 import java.util.Arrays;
 
-public class DivisibleNumbers {
+public class divisibleNumbers {
     public static void main(String[] args) {
         int divider = 2;
         int[] numbers = {2, 5, 8, 0, 7, 1, -4};
